@@ -1,0 +1,1061 @@
+{
+  "year": 2026,
+  "updated_at": "2026-08-26T23:40:09+02:00",
+  "decisions": {
+    "1C_235/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Haag",
+          "party": "GLP",
+          "role": "praesident"
+        },
+        {
+          "name": "Chaix",
+          "party": "FDP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Müller",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "1C_260/2025": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Haag",
+          "party": "GLP",
+          "role": "praesident"
+        },
+        {
+          "name": "Kneubühler",
+          "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Merz",
+          "party": "Grüne",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "1C_465/2025": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 4,
+      "judges": [
+        {
+          "name": "les Juges fédéraux Haag",
+          "party": null,
+          "role": "mitglied"
+        },
+        {
+          "name": "Chaix",
+          "party": "FDP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Kneubühler",
+          "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Müller",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "1C_514/2025": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Haag",
+          "party": "GLP",
+          "role": "praesident"
+        },
+        {
+          "name": "Kneubühler",
+          "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Weber",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "2C_300/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "abgeschrieben",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 5,
+      "judges": [
+        {
+          "name": "Aubry Girardin",
+          "party": "Grüne",
+          "role": "praesident"
+        },
+        {
+          "name": "Donzallaz",
+          "party": "parteilos (ex SVP)",
+          "role": "mitglied"
+        },
+        {
+          "name": "Hänni",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        },
+        {
+          "name": "Ryter",
+          "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Kradolfer",
+          "party": "FDP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "4A_184/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Zivilrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Kiss",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "Denys",
+          "party": "Grüne",
+          "role": "mitglied"
+        },
+        {
+          "name": "May Canellas",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "4A_267/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Zivilrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Hurni",
+          "party": "GLP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "4A_312/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Zivilrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Hurni",
+          "party": "GLP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "4A_381/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Zivilrecht",
+      "entscheid": "abgeschrieben",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Hurni",
+          "party": "GLP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "4A_385/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Zivilrecht",
+      "entscheid": "abgeschrieben",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Hurni",
+          "party": "GLP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "4D_113/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Subsidiäre Verfassungsbeschwerde",
+      "entscheid": "abgeschrieben",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Hurni",
+          "party": "GLP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "5A_115/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Zivilrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "les Juges fédéraux Bovey",
+          "party": null,
+          "role": "mitglied"
+        },
+        {
+          "name": "Josi",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Brunner",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "5A_538/2025": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Zivilrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 5,
+      "judges": [
+        {
+          "name": "Bovey",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "MM",
+          "party": null,
+          "role": "mitglied"
+        },
+        {
+          "name": "les Juges fédéraux Bovey",
+          "party": null,
+          "role": "mitglied"
+        },
+        {
+          "name": "De Rossa",
+          "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Brunner",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "5A_762/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Zivilrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Bovey",
+          "party": "FDP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "6B_1106/2023, 6B_1107/2023": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "gutgeheissen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Muschietti",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "van de Graaf",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Guidon",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "6B_201/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Muschietti",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "Rüedi",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "von Felten",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "6B_269/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "von Felten",
+          "party": "Die Mitte",
+          "role": "praesident"
+        },
+        {
+          "name": "Rüedi",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Glassey",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "6B_335/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "von Felten",
+          "party": "Die Mitte",
+          "role": "praesident"
+        },
+        {
+          "name": "Guidon",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Glassey",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "6B_342/2025": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Muschietti",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "van de Graaf",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Guidon",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "6B_632/2023": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "gutgeheissen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Muschietti",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "van de Graaf",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Guidon",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "6B_639/2024": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Muschietti",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "van de Graaf",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Guidon",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "6B_658/2024": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Muschietti",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "van de Graaf",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Guidon",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "6B_675/2024": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Muschietti",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "van de Graaf",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Guidon",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "6B_746/2024, 6B_747/2024": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Muschietti",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "Guidon",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Glassey",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "6B_765/2024": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Muschietti",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "van de Graaf",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Guidon",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "6B_863/2025": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "von Felten",
+          "party": "Die Mitte",
+          "role": "praesident"
+        },
+        {
+          "name": "Guidon",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Glassey",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "6B_936/2025": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 5,
+      "judges": [
+        {
+          "name": "Muschietti",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "Rüedi",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "von Felten",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        },
+        {
+          "name": "Wohlhauser",
+          "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Guidon",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "7B_550/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "van de Graaf",
+          "party": "SVP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "7B_580/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Koch",
+          "party": "SVP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "7B_683/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Koch",
+          "party": "SVP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "7B_758/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Koch",
+          "party": "SVP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "7B_759/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Koch",
+          "party": "SVP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "7B_773/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Koch",
+          "party": "SVP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "7B_776/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "van de Graaf",
+          "party": "SVP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "7B_825/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Koch",
+          "party": "SVP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "7B_891/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "van de Graaf",
+          "party": "SVP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "7B_898/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Abrecht",
+          "party": "SP",
+          "role": "praesident"
+        },
+        {
+          "name": "Koch",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Kölz",
+          "party": "Grüne",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "7B_940/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Abrecht",
+          "party": "SP",
+          "role": "praesident"
+        },
+        {
+          "name": "Koch",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Kölz",
+          "party": "Grüne",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "7B_951/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Strafrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Koch",
+          "party": "SVP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "7F_20/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "AndererBereich",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 4,
+      "judges": [
+        {
+          "name": "Abrecht",
+          "party": "SP",
+          "role": "praesident"
+        },
+        {
+          "name": "MM",
+          "party": null,
+          "role": "mitglied"
+        },
+        {
+          "name": "Koch",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Hofmann",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "7F_26/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "AndererBereich",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Abrecht",
+          "party": "SP",
+          "role": "praesident"
+        },
+        {
+          "name": "Koch",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Hofmann",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "8C_121/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Viscione",
+          "party": "SVP",
+          "role": "praesident"
+        },
+        {
+          "name": "Maillard",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        },
+        {
+          "name": "Métral",
+          "party": "Grüne",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "8C_269/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Viscione",
+          "party": "SVP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
+    "8C_6/2026": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Viscione",
+          "party": "SVP",
+          "role": "praesident"
+        },
+        {
+          "name": "Heine",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Scherrer Reber",
+          "party": "FDP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "8C_647/2025": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "teilweise gutgeheissen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Viscione",
+          "party": "SVP",
+          "role": "praesident"
+        },
+        {
+          "name": "Heine",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Scherrer Reber",
+          "party": "FDP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "9C_274/2025": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "gutgeheissen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 5,
+      "judges": [
+        {
+          "name": "Moser-Szeless",
+          "party": "SVP",
+          "role": "praesident"
+        },
+        {
+          "name": "Mme",
+          "party": null,
+          "role": "mitglied"
+        },
+        {
+          "name": "les Juges fédéraux Moser-Szeless",
+          "party": null,
+          "role": "mitglied"
+        },
+        {
+          "name": "Parrino",
+          "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Beusch",
+          "party": "SP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "9C_469/2025": {
+      "publication_date": "2026-08-26",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Moser-Szeless",
+          "party": "SVP",
+          "role": "praesident"
+        },
+        {
+          "name": "Stadelmann",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        },
+        {
+          "name": "Parrino",
+          "party": "SP",
+          "role": "mitglied"
+        }
+      ]
+    }
+  }
+}
