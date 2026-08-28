@@ -1,0 +1,25 @@
+name: Bundesgericht Scraper
+
+on:
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+
+      - name: Python installieren
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Python-Pakete installieren
+        run: |
+          pip install playwright beautifulsoup4 lxml pandas openpyxl
+          playwright install chromium
+
+      - name: Bundesgericht scrapen und analysieren
+        run: python bundesgericht_tagesurteile.py
