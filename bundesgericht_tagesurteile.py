@@ -173,9 +173,12 @@ def extract_president(block: str, language: str) -> str | None:
         pattern = r"Bundesrichter(?:in)?\s+(.+?),\s*(?:Präsident|Präsidentin|(?:als\s+)?präsidierendes Mitglied)"
     elif language == "fr":
         pattern = (
-            r"(?:M\.\s+le\s+Juge\s+fédéral|Mme\s+la\s+Juge\s+fédérale|"
-            r"MM\.?\s+(?:et\s+Mmes?|les)\s+les?\s+Juges\s+fédéraux|"
-            r"Mmes?\s+et\s+MM?\.?\s+les\s+Juges\s+fédéraux)\s+(.+?),\s*"
+            r"(?:M\.\s+le\s+Juge\s+fédéral|"
+            r"Mme\s+la\s+Juge\s+fédérale|"
+            r"MM\.?\s+les\s+Juges\s+fédéraux|"
+            r"Mmes?\s+et\s+MM?\.?\s+les\s+Juges\s+fédéraux|"
+            r"MM?\.?\s+et\s+Mmes?\s+les\s+Juges\s+fédéraux)\s+"
+            r"(.+?),\s*"
             r"(?:Président|Présidente|Juge présidant|Juge présidante)"
         )
     else:
