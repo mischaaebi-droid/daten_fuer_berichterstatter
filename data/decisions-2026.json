@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "updated_at": "2026-08-29T11:38:55+02:00",
+  "updated_at": "2026-08-29T16:37:25+02:00",
   "decisions": {
     "1C_144/2025": {
       "publication_date": "2026-08-28",
@@ -12,26 +12,31 @@
       "judges": [
         {
           "name": "Haag",
+          "full_name": "Stefan Haag",
           "party": "GLP",
           "role": "praesident"
         },
         {
           "name": "Chaix",
+          "full_name": "François Chaix",
           "party": "FDP",
           "role": "mitglied"
         },
         {
           "name": "Kneubühler",
+          "full_name": "Lorenz Kneubühler",
           "party": "SP",
           "role": "mitglied"
         },
         {
           "name": "Müller",
+          "full_name": "Thomas Müller",
           "party": "SVP",
           "role": "mitglied"
         },
         {
           "name": "Merz",
+          "full_name": "Laurent Merz",
           "party": "Grüne",
           "role": "mitglied"
         }
@@ -47,16 +52,19 @@
       "judges": [
         {
           "name": "Haag",
+          "full_name": "Stefan Haag",
           "party": "GLP",
           "role": "praesident"
         },
         {
           "name": "Chaix",
+          "full_name": "François Chaix",
           "party": "FDP",
           "role": "mitglied"
         },
         {
           "name": "Kneubühler",
+          "full_name": "Lorenz Kneubühler",
           "party": "SP",
           "role": "mitglied"
         }
@@ -97,26 +105,31 @@
       "judges": [
         {
           "name": "Haag",
+          "full_name": "Stefan Haag",
           "party": "GLP",
           "role": "praesident"
         },
         {
           "name": "Chaix",
+          "full_name": "François Chaix",
           "party": "FDP",
           "role": "mitglied"
         },
         {
           "name": "Kneubühler",
+          "full_name": "Lorenz Kneubühler",
           "party": "SP",
           "role": "mitglied"
         },
         {
           "name": "Müller",
+          "full_name": "Thomas Müller",
           "party": "SVP",
           "role": "mitglied"
         },
         {
           "name": "Merz",
+          "full_name": "Laurent Merz",
           "party": "Grüne",
           "role": "mitglied"
         }
@@ -157,6 +170,7 @@
       "judges": [
         {
           "name": "Haag",
+          "full_name": "Stefan Haag",
           "party": "GLP",
           "role": "einzelrichter"
         }
@@ -172,16 +186,19 @@
       "judges": [
         {
           "name": "Haag",
+          "full_name": "Stefan Haag",
           "party": "GLP",
           "role": "praesident"
         },
         {
           "name": "Chaix",
+          "full_name": "François Chaix",
           "party": "FDP",
           "role": "mitglied"
         },
         {
           "name": "Müller",
+          "full_name": "Thomas Müller",
           "party": "SVP",
           "role": "mitglied"
         }
@@ -252,16 +269,19 @@
       "judges": [
         {
           "name": "Haag",
+          "full_name": "Stefan Haag",
           "party": "GLP",
           "role": "praesident"
         },
         {
           "name": "Merz",
+          "full_name": "Laurent Merz",
           "party": "Grüne",
           "role": "mitglied"
         },
         {
           "name": "Hänni",
+          "full_name": "Julia Hänni",
           "party": "Die Mitte",
           "role": "mitglied"
         }
@@ -337,16 +357,19 @@
       "judges": [
         {
           "name": "Hurni",
+          "full_name": "Christoph Hurni",
           "party": "GLP",
           "role": "praesident"
         },
         {
           "name": "Kiss",
+          "full_name": "Christina Kiss",
           "party": "FDP",
           "role": "mitglied"
         },
         {
           "name": "May Canellas",
+          "full_name": "Marie-Chantal May Canellas",
           "party": "Die Mitte",
           "role": "mitglied"
         }
@@ -437,16 +460,19 @@
       "judges": [
         {
           "name": "Hurni",
+          "full_name": "Christoph Hurni",
           "party": "GLP",
           "role": "praesident"
         },
         {
           "name": "Rüedi",
+          "full_name": "Yves Rüedi",
           "party": "SVP",
           "role": "mitglied"
         },
         {
           "name": "May Canellas",
+          "full_name": "Marie-Chantal May Canellas",
           "party": "Die Mitte",
           "role": "mitglied"
         }
@@ -487,16 +513,19 @@
       "judges": [
         {
           "name": "Bovey",
+          "full_name": "Grégory Bovey",
           "party": "FDP",
           "role": "praesident"
         },
         {
           "name": "Hartmann",
+          "full_name": "Stephan Hartmann",
           "party": "Grüne",
           "role": "mitglied"
         },
         {
           "name": "Josi",
+          "full_name": "Christian Josi",
           "party": "SVP",
           "role": "mitglied"
         }
@@ -512,16 +541,19 @@
       "judges": [
         {
           "name": "Bovey",
+          "full_name": "Grégory Bovey",
           "party": "FDP",
           "role": "praesident"
         },
         {
           "name": "Josi",
+          "full_name": "Christian Josi",
           "party": "SVP",
           "role": "mitglied"
         },
         {
           "name": "Brunner",
+          "full_name": "Arthur Brunner",
           "party": "SVP",
           "role": "mitglied"
         }
@@ -587,16 +619,19 @@
       "judges": [
         {
           "name": "Hartmann",
+          "full_name": "Stephan Hartmann",
           "party": "Grüne",
           "role": "praesident"
         },
         {
           "name": "De Rossa",
+          "full_name": "Federica De Rossa",
           "party": "SP",
           "role": "mitglied"
         },
         {
           "name": "Josi",
+          "full_name": "Christian Josi",
           "party": "SVP",
           "role": "mitglied"
         }
@@ -612,16 +647,19 @@
       "judges": [
         {
           "name": "Hartmann",
+          "full_name": "Stephan Hartmann",
           "party": "Grüne",
           "role": "praesident"
         },
         {
           "name": "De Rossa",
+          "full_name": "Federica De Rossa",
           "party": "SP",
           "role": "mitglied"
         },
         {
           "name": "Brunner",
+          "full_name": "Arthur Brunner",
           "party": "SVP",
           "role": "mitglied"
         }
@@ -637,16 +675,19 @@
       "judges": [
         {
           "name": "Hartmann",
+          "full_name": "Stephan Hartmann",
           "party": "Grüne",
           "role": "praesident"
         },
         {
           "name": "De Rossa",
+          "full_name": "Federica De Rossa",
           "party": "SP",
           "role": "mitglied"
         },
         {
           "name": "Josi",
+          "full_name": "Christian Josi",
           "party": "SVP",
           "role": "mitglied"
         }
@@ -997,16 +1038,19 @@
       "judges": [
         {
           "name": "von Felten",
+          "full_name": "Rolf von Felten",
           "party": "Die Mitte",
           "role": "praesident"
         },
         {
           "name": "Heine",
+          "full_name": "Alexia Heine",
           "party": "SVP",
           "role": "mitglied"
         },
         {
           "name": "Guidon",
+          "full_name": "Patrick Guidon",
           "party": "SVP",
           "role": "mitglied"
         }
@@ -1022,16 +1066,19 @@
       "judges": [
         {
           "name": "Abrecht",
+          "full_name": "Bernard Abrecht",
           "party": "SP",
           "role": "praesident"
         },
         {
           "name": "Kölz",
+          "full_name": "Christian Kölz",
           "party": "Grüne",
           "role": "mitglied"
         },
         {
           "name": "Hofmann",
+          "full_name": "Yann-Eric Hofmann",
           "party": "Die Mitte",
           "role": "mitglied"
         }
@@ -1047,16 +1094,19 @@
       "judges": [
         {
           "name": "Abrecht",
+          "full_name": "Bernard Abrecht",
           "party": "SP",
           "role": "praesident"
         },
         {
           "name": "Kölz",
+          "full_name": "Christian Kölz",
           "party": "Grüne",
           "role": "mitglied"
         },
         {
           "name": "Hofmann",
+          "full_name": "Yann-Eric Hofmann",
           "party": "Die Mitte",
           "role": "mitglied"
         }
@@ -1102,6 +1152,7 @@
       "judges": [
         {
           "name": "Abrecht",
+          "full_name": "Bernard Abrecht",
           "party": "SP",
           "role": "einzelrichter"
         }
@@ -1367,16 +1418,19 @@
       "judges": [
         {
           "name": "Viscione",
+          "full_name": "Daniela Viscione",
           "party": "SVP",
           "role": "praesident"
         },
         {
           "name": "Maillard",
+          "full_name": "Marcel Maillard",
           "party": "Die Mitte",
           "role": "mitglied"
         },
         {
           "name": "Scherrer Reber",
+          "full_name": "Karin Scherrer Reber",
           "party": "FDP",
           "role": "mitglied"
         }
@@ -1407,6 +1461,7 @@
       "judges": [
         {
           "name": "Viscione",
+          "full_name": "Daniela Viscione",
           "party": "SVP",
           "role": "einzelrichter"
         }
@@ -1472,16 +1527,19 @@
       "judges": [
         {
           "name": "Viscione",
+          "full_name": "Daniela Viscione",
           "party": "SVP",
           "role": "praesident"
         },
         {
           "name": "Maillard",
+          "full_name": "Marcel Maillard",
           "party": "Die Mitte",
           "role": "mitglied"
         },
         {
           "name": "Scherrer Reber",
+          "full_name": "Karin Scherrer Reber",
           "party": "FDP",
           "role": "mitglied"
         }
@@ -1532,26 +1590,31 @@
       "judges": [
         {
           "name": "Moser-Szeless",
+          "full_name": "Margit Moser-Szeless",
           "party": "SVP",
           "role": "praesident"
         },
         {
           "name": "Stadelmann",
+          "full_name": "Thomas Stadelmann",
           "party": "Die Mitte",
           "role": "mitglied"
         },
         {
           "name": "Parrino",
+          "full_name": "Francesco Parrino",
           "party": "SP",
           "role": "mitglied"
         },
         {
           "name": "Beusch",
+          "full_name": "Michael Beusch",
           "party": "SP",
           "role": "mitglied"
         },
         {
           "name": "Bollinger",
+          "full_name": "Susanne Bollinger",
           "party": "SVP",
           "role": "mitglied"
         }
@@ -1567,6 +1630,7 @@
       "judges": [
         {
           "name": "Moser-Szeless",
+          "full_name": "Margit Moser-Szeless",
           "party": "SVP",
           "role": "einzelrichter"
         }
@@ -1607,16 +1671,19 @@
       "judges": [
         {
           "name": "Moser-Szeless",
+          "full_name": "Margit Moser-Szeless",
           "party": "SVP",
           "role": "praesident"
         },
         {
           "name": "Stadelmann",
+          "full_name": "Thomas Stadelmann",
           "party": "Die Mitte",
           "role": "mitglied"
         },
         {
           "name": "Bollinger",
+          "full_name": "Susanne Bollinger",
           "party": "SVP",
           "role": "mitglied"
         }
