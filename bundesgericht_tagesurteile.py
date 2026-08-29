@@ -478,10 +478,15 @@ def analyse_files(files: list[Path], judges_file: Path) -> tuple[pd.DataFrame, p
     )
     judges = pd.read_excel(judges_file)
     merged = long.merge(judges, on="name", how="left").drop(columns="party_raw", errors="ignore")
+    
     cleaned = merged[[
-        "id_filename", "decision_sign", "name", "party", "legal area", "entscheid",
+        "id_filename", "decision_sign", "name", "both_names", "party", "legal area", "entscheid",
         "beschwerdefuehrer", "beschwerdegegner",
     ]].dropna(subset=["name"])
+    
+
+     
+    
     cleaned = cleaned[cleaned["name"].str.strip() != ""]
     return raw, cleaned
 
@@ -562,6 +567,8 @@ def save_yearly_json(
         judges = []
         for _, judge in judge_rows.iterrows():
             name = str(judge["name"]).strip()
+            both_names = judge.get("both_names")
+            full_name = name if pd.isna(both_names) else str(both_names).strip()
             if single_judge:
                 role = "einzelrichter"
             elif pd.notna(president) and name == str(president).strip():
@@ -572,6 +579,7 @@ def save_yearly_json(
             party = judge.get("party")
             judges.append({
                 "name": name,
+                "full_name": full_name,
                 "party": None if pd.isna(party) else str(party),
                 "role": role,
             })
