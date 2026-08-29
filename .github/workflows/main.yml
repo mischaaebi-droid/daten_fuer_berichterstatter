@@ -25,7 +25,8 @@ jobs:
           playwright install chromium
 
       - name: Bundesgericht scrapen und analysieren
-        run: python bundesgericht_tagesurteile.py
+        run: python bundesgericht_tagesurteile.py --date 20260828
+       
 
       - name: JSON auf GitHub speichern
         run: |
