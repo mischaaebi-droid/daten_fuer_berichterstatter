@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "updated_at": "2026-08-29T11:33:48+02:00",
+  "updated_at": "2026-08-29T11:38:55+02:00",
   "decisions": {
     "1C_144/2025": {
       "publication_date": "2026-08-28",
@@ -16,11 +16,6 @@
           "role": "praesident"
         },
         {
-          "name": "les Juges fédéraux Haag",
-          "party": null,
-          "role": "mitglied"
-        },
-        {
           "name": "Chaix",
           "party": "FDP",
           "role": "mitglied"
@@ -33,6 +28,11 @@
         {
           "name": "Müller",
           "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Merz",
+          "party": "Grüne",
           "role": "mitglied"
         }
       ]
@@ -101,11 +101,6 @@
           "role": "praesident"
         },
         {
-          "name": "les Juges fédéraux Haag",
-          "party": null,
-          "role": "mitglied"
-        },
-        {
           "name": "Chaix",
           "party": "FDP",
           "role": "mitglied"
@@ -118,6 +113,11 @@
         {
           "name": "Müller",
           "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Merz",
+          "party": "Grüne",
           "role": "mitglied"
         }
       ]
@@ -248,22 +248,12 @@
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
-      "judge_count": 5,
+      "judge_count": 3,
       "judges": [
         {
           "name": "Haag",
           "party": "GLP",
           "role": "praesident"
-        },
-        {
-          "name": "MM",
-          "party": null,
-          "role": "mitglied"
-        },
-        {
-          "name": "les Juges fédéraux Haag",
-          "party": null,
-          "role": "mitglied"
         },
         {
           "name": "Merz",
@@ -443,22 +433,12 @@
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
-      "judge_count": 5,
+      "judge_count": 3,
       "judges": [
         {
           "name": "Hurni",
           "party": "GLP",
           "role": "praesident"
-        },
-        {
-          "name": "MM",
-          "party": null,
-          "role": "mitglied"
-        },
-        {
-          "name": "les Juges fédéraux Hurni",
-          "party": null,
-          "role": "mitglied"
         },
         {
           "name": "Rüedi",
@@ -1556,16 +1536,6 @@
           "role": "praesident"
         },
         {
-          "name": "Mmes",
-          "party": null,
-          "role": "mitglied"
-        },
-        {
-          "name": "les Juges fédéraux Moser-Szeless",
-          "party": null,
-          "role": "mitglied"
-        },
-        {
           "name": "Stadelmann",
           "party": "Die Mitte",
           "role": "mitglied"
@@ -1573,6 +1543,16 @@
         {
           "name": "Parrino",
           "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Beusch",
+          "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Bollinger",
+          "party": "SVP",
           "role": "mitglied"
         }
       ]
