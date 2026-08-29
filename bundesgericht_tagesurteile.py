@@ -240,11 +240,21 @@ def extract_judges(block: str | None, language: str | None) -> tuple[str | None,
     return president, judges
 
 
+
+    
+    
 def legal_area(decision_sign: str) -> str:
-    match = re.search(r"\d([A-Z])_", decision_sign)
+    match = re.search(r"^(\d+)[A-Z]_", decision_sign)
+
     return {
-        "A": "Zivilrecht", "B": "Strafrecht", "C": "Öffentliches Recht",
-        "D": "Subsidiäre Verfassungsbeschwerde",
+        "1": "Öffentliches Recht",
+        "2": "Öffentliches Recht",
+        "8": "Öffentliches Recht",
+        "9": "Öffentliches Recht",
+        "4": "Zivilrecht",
+        "5": "Zivilrecht",
+        "6": "Strafrecht",
+        "7": "Strafrecht",
     }.get(match.group(1), "AndererBereich") if match else "Mistake_Legalara"
 
 
