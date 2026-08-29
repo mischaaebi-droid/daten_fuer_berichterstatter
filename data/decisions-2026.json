@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "updated_at": "2026-08-29T10:59:21+02:00",
+  "updated_at": "2026-08-29T11:05:10+02:00",
   "decisions": {
     "1C_144/2025": {
       "publication_date": "2026-08-28",
@@ -8,8 +8,13 @@
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
-      "judge_count": 4,
+      "judge_count": 5,
       "judges": [
+        {
+          "name": "Haag",
+          "party": "GLP",
+          "role": "praesident"
+        },
         {
           "name": "les Juges fédéraux Haag",
           "party": null,
@@ -88,8 +93,13 @@
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
-      "judge_count": 4,
+      "judge_count": 5,
       "judges": [
+        {
+          "name": "Haag",
+          "party": "GLP",
+          "role": "praesident"
+        },
         {
           "name": "les Juges fédéraux Haag",
           "party": null,
@@ -234,7 +244,7 @@
     },
     "1F_1/2026": {
       "publication_date": "2026-08-28",
-      "legal_area": "AndererBereich",
+      "legal_area": "Öffentliches Recht",
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -429,7 +439,7 @@
     },
     "4F_22/2026": {
       "publication_date": "2026-08-28",
-      "legal_area": "AndererBereich",
+      "legal_area": "Zivilrecht",
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -639,7 +649,7 @@
     },
     "5D_20/2026": {
       "publication_date": "2026-08-28",
-      "legal_area": "Subsidiäre Verfassungsbeschwerde",
+      "legal_area": "Zivilrecht",
       "entscheid": "gutgeheissen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -999,7 +1009,7 @@
     },
     "6F_12/2026": {
       "publication_date": "2026-08-28",
-      "legal_area": "AndererBereich",
+      "legal_area": "Strafrecht",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -1033,7 +1043,7 @@
         {
           "name": "Abrecht",
           "party": "SP",
-          "role": "mitglied"
+          "role": "praesident"
         },
         {
           "name": "Kölz",
@@ -1058,7 +1068,7 @@
         {
           "name": "Abrecht",
           "party": "SP",
-          "role": "mitglied"
+          "role": "praesident"
         },
         {
           "name": "Kölz",
@@ -1609,7 +1619,7 @@
     },
     "9F_5/2026": {
       "publication_date": "2026-08-28",
-      "legal_area": "AndererBereich",
+      "legal_area": "Öffentliches Recht",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
