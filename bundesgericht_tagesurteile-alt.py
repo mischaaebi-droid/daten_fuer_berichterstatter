@@ -169,239 +169,83 @@ def extract_panel_block(text: str, language: str | None) -> str | None:
 
 
 def extract_president(block: str, language: str) -> str | None:
-    """Erkennt den Vorsitz nach derselben Logik wie das bewährte Aufbereitungs-Notebook."""
-    if language == "fr":
+    if language == "de":
+        pattern = r"Bundesrichter(?:in)?\s+(.+?),\s*(?:Präsident|Präsidentin|(?:als\s+)?präsidierendes Mitglied)"
+    elif language == "fr":
         pattern = (
             r"(?:M\.\s+le\s+Juge\s+fédéral|"
             r"Mme\s+la\s+Juge\s+fédérale|"
-            r"MM\.\s+les\s+Juges\s+fédéraux|"
-            r"MM\.\s+et\s+Mmes\s+les\s+Juges\s+fédéraux|"
-            r"MM\s+et\s+Mme\s+les\s+Juges\s+fédéraux|"
-            r"Mmes\s+et\s+MM\s+les\s+Juges\s+fédéraux|"
-            r"Mmes\s+et\s+M\.\s+les\s+Juges\s+fédéraux|"
-            r"MM\.\s+et\s+Mme\s+les\s+Juges\s+fédéraux|"
-            r"MM\.\s+et\s+Mme\s+et\s+les\s+Juges\s+fédéraux)"
-            r"\s+(.+?),\s*"
+            r"MM\.?\s+les\s+Juges\s+fédéraux|"
+            r"Mmes?\s+et\s+MM?\.?\s+les\s+Juges\s+fédéraux|"
+            r"MM?\.?\s+et\s+Mmes?\s+les\s+Juges\s+fédéraux)\s+"
+            r"(.+?),\s*"
             r"(?:Président|Présidente|Juge présidant|Juge présidante)"
         )
-        flags = re.DOTALL | re.IGNORECASE
-    elif language == "de":
-        pattern = (
-            r"Bundesrichter(?:in)?\s+(.+?),\s*"
-            r"(?:Präsident|Präsidentin|(?:als\s+)?präsidierendes Mitglied)"
-        )
-        flags = 0
-    elif language == "it":
-        pattern = (
-            r"Giudic[ei]\s+federal[ei]\s+(.+?),\s*"
-            r"(?:Presidente|Giudice presidente)"
-        )
-        flags = re.IGNORECASE
     else:
-        return None
-
-    match = re.search(pattern, block, flags)
+        pattern = r"Giudic[ei]\s+federal[ei]\s+(.+?),\s*(?:Presidente|Giudice presidente)"
+    match = re.search(pattern, block, re.DOTALL | re.IGNORECASE)
     return match.group(1).strip() if match else None
 
 
-def extract_single_judge(block: str, language: str) -> str | None:
-    """Separate Einzelrichter-Erkennung aus dem Vorbild-Notebook."""
-    if language == "de":
-        pattern = r"Bundesrichter(?:in)?\s+(.+?),\s+als Einzelrichter(?:in)?"
-        flags = 0
-    elif language == "fr":
-        pattern = (
-            r"(?:M\.|Mme)\s+le Juge fédéral\s+(.+?),\s+"
-            r"en qualité de juge unique"
-        )
-        flags = re.IGNORECASE
-    elif language == "it":
-        pattern = (
-            r"Giudice federale\s+(.+?),\s+"
-            r"in qualità di giudice unic[oa]"
-        )
-        flags = re.IGNORECASE
-    else:
-        return None
-
-    match = re.search(pattern, block, flags)
-    return match.group(1).strip() if match else None
-
-
-def extract_judges(
-    block: str | None, language: str | None
-) -> tuple[str | None, list[str], bool, str | None]:
-    """Extrahiert Richter mit der robusten Bereinigungslogik des Vorbild-Notebooks."""
+def extract_judges(block: str | None, language: str | None) -> tuple[str | None, list[str]]:
     if not block or not language:
-        return None, [], False, None
+        return None, []
 
+    block = block.replace("Muschietti. Bundesrichter von Felten", "Muschietti, Bundesrichter von Felten")
+    block = block.replace("Bundesrichterinnen Hohl und Kiss", "Bundesrichterinnen Hohl, Kiss")
     president = extract_president(block, language)
 
-    block_corrections = {
-        "Muschietti. Bundesrichter von Felten":
-            "Muschietti, Bundesrichter von Felten",
-        "Bundesrichterinnen Hohl und Kiss":
-            "Bundesrichterinnen Hohl, Kiss",
-    }
-    for wrong, correct in block_corrections.items():
-        block = block.replace(wrong, correct)
-
     if language == "de":
-        judge_text = re.split(
-            r"Gerichtsschreiber(?:in)?", block, maxsplit=1
-        )[0]
-        judge_text = re.sub(
-            r",\s*Präsident(?:in)?\s+Bundesrichter(?:in)?\s+",
-            ", ", judge_text, flags=re.IGNORECASE,
-        )
-        judge_text = re.sub(
-            r"Bundesrichterinnen,\s*", "", judge_text, flags=re.IGNORECASE
-        )
-        judge_text = re.sub(
-            r"\s+(?=nebenamtliche[rn]?\s+Bundesrichter)",
-            ", ", judge_text, flags=re.IGNORECASE,
-        )
-        judge_text = re.sub(
-            r"(?:nebenamtliche[rn]?\s+)?Bundes?richter(?:in|innen)?\s+",
-            "", judge_text, flags=re.IGNORECASE,
-        )
-        roles = {
-            "Präsident", "Präsidentin", "Bundesrichter", "Bundesrichterin",
-            "präsidierendes Mitglied", "als präsidierendes Mitglied",
-            "präsidierendes Miglied", "als Einzelrichter",
-            "als Einzelrichterin", "als Instruktionsrichterin",
-            "als Instruktionsrichter", "als präsidierendes Miglied",
-            "Einzelrichterin", "präsisierendes Mitglied",
-        }
-
+        judge_text = re.split(r"Gerichtsschreiber(?:in)?", block, maxsplit=1)[0]
+        judge_text = re.sub(r",\s*Präsident(?:in)?\s+Bundesrichter(?:in)?\s+", ", ", judge_text, flags=re.I)
+        judge_text = re.sub(r"Bundesrichterinnen,\s*", "", judge_text, flags=re.I)
+        judge_text = re.sub(r"\s+(?=nebenamtliche[rn]?\s+Bundesrichter)", ", ", judge_text, flags=re.I)
+        judge_text = re.sub(r"(?:nebenamtliche[rn]?\s+)?Bundes?richter(?:in|innen)?\s+", "", judge_text, flags=re.I)
     elif language == "fr":
-        judge_text = re.split(
-            r"Greffi(?:er|ère)", block, maxsplit=1, flags=re.IGNORECASE
-        )[0]
+        judge_text = re.split(r"Greffi(?:er|ère)", block, maxsplit=1, flags=re.I)[0]
         judge_text = re.sub(
-            r"^(?:"
-            r"Mmes\s+et\s+M\.\s+la\s+Juge\s+fédérale,?\s*|"
-            r"MM\.?\s+et\s+Mme\s+et\s+les\s+Juges\s+fédéraux,?\s*|"
-            r"MM\.?\s+et\s+les\s+Juges\s+fédéraux|"
-            r"M\.\s+et\s+Mmes?(?:\s+et)?\s+les\s+Juge?s?\s+fédéraux,?\s*|"
-            r"M\.\s+et\s+Mmes\s+les\s+Juges\s+fédéraux|"
-            r"MM\.?\s+et\s+Mmes\s+les\s+Juges\s+fédéraux|"
-            r"Mmes\s+et\s+M\.\s+les\s+Juge?s?\s+fédéra(?:ux|aux),?\s*|"
-            r"Mme\s+et\s+(?:M\.\s+)?les\s+Juge?s?\s+fédéraux,?\s*|"
-            r"MM\.?\s+et\s+Mme\s+les\s+Juge?s?\s+fédéraux,?\s*|"
-            r"MM\.?\s+les\s+Juge?s?\s+fédéraux,?\s*|"
-            r"Mmes?\s+et\s+MM\.?\s+les\s+Juge?s?\s+fédéraux,?\s*|"
-            r"Mmes?\s+et\s+MM\.\s+les\s+Juges\s+fédéraux|"
-            r"Mmes\s+et\s+M\.\s+les\s+Juges\s+fédéraux|"
-            r"MM\.\s+et\s+Mme\s+les\s+Juges\s+fédéraux|"
-            r"Mmes\s+les\s+Juges\s+fédéral(?:es|aux)|"
-            r"MM\.?\s+les\s+Juges\s+fédéraux|"
-            r"Mme\s+les?\s+Juges?\s+fédéraux|"
-            r"Mme\s+la\s+Juge\s+fédérale|"
-            r"M\.\s+le\s+Juge\s+fédéral|"
-            r"les\s+Juges\s+fédéraux"
-            r")\s+",
-            "", judge_text, flags=re.IGNORECASE,
+            r"^(?:Mmes?\s+et\s+MM?\.?|MM?\.?\s+et\s+Mmes?|MM?\.?|Mmes?|Mme\s+la|M\.\s+le)?\s*"
+            r"(?:les?\s+)?Juges?\s+fédéral(?:e|es|aux)?[,]?\s*", "", judge_text, flags=re.I,
         )
-        judge_text = re.sub(
-            r",?\s*(?:présidente?|juge\s+présidant|juge\s+suppléante?)\s*,?",
-            ", ", judge_text, flags=re.IGNORECASE,
-        )
+        judge_text = re.sub(r",?\s*(?:présidente?|juge\s+présidant|juge\s+suppléante?)\s*,?", ", ", judge_text, flags=re.I)
         judge_text = re.sub(r"\s+et\s+", ", ", judge_text)
-        roles = {
-            "Président", "Présidente", "Juge présidant", "Juge présidante",
-            "en qualité de juge unique", "en qualité de juge instructrice",
-            "en qualité de Juge unique", "en qualité de Juge instructeur",
-            "en qualité de juge instructeur", "Juge unique", "en qualité de",
-            "MM", "Juge instructrice", "membre présidant",
-        }
-
     else:
-        judge_text = re.split(
-            r"Cancellier(?:e|a)", block, maxsplit=1
-        )[0]
-        judge_text = re.sub(
-            r"Giudic(?:e|i)\s+federal(?:e|i)\s+", "", judge_text
-        )
-        judge_text = re.sub(
-            r"\s+e\s+", ", ", judge_text, flags=re.IGNORECASE
-        )
-        judge_text = re.sub(
-            r",?\s*(?:Giudice\s+Presidente|Giudice\s+supplente)\s*,?",
-            ", ", judge_text, flags=re.IGNORECASE,
-        )
-        roles = {
-            "Presidente", "Giudice presidente", "Giudice unico",
-            "in qualità di giudice unico", "in qualità di giudice unica",
-            "Giudice dell'istruzione",
-        }
+        judge_text = re.split(r"Cancellier(?:e|a)", block, maxsplit=1)[0]
+        judge_text = re.sub(r"Giudic(?:e|i)\s+federal(?:e|i)\s+", "", judge_text)
+        judge_text = re.sub(r"\s+e\s+", ", ", judge_text, flags=re.I)
+        judge_text = re.sub(r",?\s*(?:Giudice\s+Presidente|Giudice\s+supplente)\s*,?", ", ", judge_text, flags=re.I)
 
-    judges = [
-        re.sub(
-            r"^(?:"
-            r"MM\.?\s+et\s+Mme\s+et\s+les\s+Juges\s+fédéraux|"
-            r"Mmes?\s+les\s+Juges\s+fédéraux|"
-            r"MM\.?\s+les\s+Juges\s+fédéraux|"
-            r"Mme\s+les?\s+Juges?\s+fédéraux|"
-            r"Mme\.?\s+les?\s+Juges?\s+fédérales?|"
-            r"Mme?\.?\s+la\s+Juge\s+fédérale|"
-            r"(?:M\.\s+la\s+Juge|MM\.?\s+et\s+Mme\s+les\s+Juges)\s+fédérales?|"
-            r"M\.\s+le\s+Juge(?:\s+fédéral)?|"
-            r"nebenamtlicher\s+Bundesrichter|"
-            r"Bundesrichter(?:in)?|"
-            r"Bundesricher(?:in)?|"
-            r"Bundesricherin|"
-            r"Bundesrichtger|"
-            r"Bundesricherin|"
-            r"Bunesrichter|"
-            r"Bundesricherin|"
-            r"Bundsrichter(?:in)?|"
-            r"Juge\s+instruct(?:eur|rice)|"
-            r"Mme\.?"
-            r")\s+",
-            "", part.strip(" ."), flags=re.IGNORECASE,
-        )
-        for part in judge_text.split(",")
-        if part.strip(" .") and part.strip(" .") not in roles
-    ]
+    role_pattern = re.compile(
+        r"^(?:Präsident(?:in)?|(?:als\s+)?präsidierendes Mitglied|(?:als\s+)?Einzelrichter(?:in)?|"
+        r"Président(?:e)?|Juge présidant(?:e)?|(?:en qualité de )?[Jj]uge (?:unique|instruct(?:eur|rice))|"
+        r"Presidente|Giudice presidente|(?:in qualità di )?giudice unic[oa])$", re.I,
+    )
+    prefix_pattern = re.compile(
+        r"^(?:MM?\.?|Mmes?\.?|les\s+Juges\s+fédéraux|nebenamtlicher\s+Bundesrichter|"
+        r"Bundesr(?:i|ie)chter(?:in)?|Bundesrichtger|Bunesrichter|Bundsrichter|Mme\.?)\s+", re.I,
+    )
+    judges = []
+    for part in judge_text.split(","):
+        name = prefix_pattern.sub("", part.strip(" ."))
+        name = re.sub(r"^(?:als\s+)?präsidierendes\s+Mitglied\s+|\s+als\s+präsidierendes\s+Mitglied$", "", name, flags=re.I)
+        name = unicodedata.normalize("NFC", name).replace("\u00a0", " ").replace("\u200b", "").strip(" .;")
+        if name and not role_pattern.fullmatch(name):
+            name = NAME_CORRECTIONS.get(name, name)
+            if name not in judges:
+                judges.append(name)
 
-    judges = [
-        re.sub(
-            r"^(?:als\s+)?präsidierendes\s+Mitglied\s+|"
-            r"\s+als\s+präsidierendes\s+Mitglied$",
-            "", name, flags=re.IGNORECASE,
-        ).strip()
-        for name in judges
-    ]
-
-    judges = [
-        unicodedata.normalize("NFC", name)
-        .replace("\u00a0", " ")
-        .replace("\u200b", "")
-        .strip(" .;,")
-        for name in judges
-    ]
-    judges = [name for name in judges if name]
-    judges = [NAME_CORRECTIONS.get(name, name) for name in judges]
     president = NAME_CORRECTIONS.get(president, president)
-
-    # Doppelte Namen vermeiden, Reihenfolge aber erhalten.
-    judges = list(dict.fromkeys(judges))
-
     if president and president not in judges:
         judges.insert(0, president)
     elif president and judges and judges[0] != president:
         judges.remove(president)
         judges.insert(0, president)
+    return president, judges
 
-    single_judge_name = extract_single_judge(block, language)
-    single_judge_name = NAME_CORRECTIONS.get(single_judge_name, single_judge_name)
-    single_judge = len(judges) == 1 or single_judge_name is not None
-    if single_judge and single_judge_name is None and judges:
-        single_judge_name = judges[0]
 
-    return president, judges, single_judge, single_judge_name
 
+    
+    
 def legal_area(decision_sign: str) -> str:
     match = re.search(r"^(\d+)[A-Z]_", decision_sign)
 
@@ -448,7 +292,7 @@ def analyse_files(files: list[Path], judges_file: Path) -> tuple[pd.DataFrame, p
 
         language = detect_language(text)
         block = extract_panel_block(text, language)
-        president, judges, single_judge, single_judge_name = extract_judges(block, language)
+        president, judges = extract_judges(block, language)
         other_judges = [name for name in judges if name != president]
         parties = search_verfahrensbeteiligte(soup, file.name)
 
@@ -456,8 +300,8 @@ def analyse_files(files: list[Path], judges_file: Path) -> tuple[pd.DataFrame, p
             "id_filename": filename_id, "filename": file.name,
             "decision_sign": decision_sign, "sprache": language,
             "besetzung_block": block, "praesident": president,
-            "einzelrichter": single_judge,
-            "einzelrichter_name": single_judge_name,
+            "einzelrichter": len(judges) == 1,
+            "einzelrichter_name": judges[0] if len(judges) == 1 else None,
             "weiterer_richter1": other_judges[0] if len(other_judges) > 0 else None,
             "weiterer_richter2": other_judges[1] if len(other_judges) > 1 else None,
             "weiterer_richter3": other_judges[2] if len(other_judges) > 2 else None,
