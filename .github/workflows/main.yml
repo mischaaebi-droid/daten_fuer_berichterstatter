@@ -3,6 +3,10 @@ name: Bundesgericht Scraper
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '30 18 * * *'
+      timezone: 'Europe/Zurich'
+
 permissions:
   contents: write
 
