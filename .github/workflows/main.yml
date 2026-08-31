@@ -5,7 +5,7 @@ on:
 
   schedule:
 
-    - cron: '05 23 * * *'
+    - cron: '5 23 * * *'
       timezone: 'Europe/Zurich'
     - cron: '30 18 * * *'
       timezone: 'Europe/Zurich'
