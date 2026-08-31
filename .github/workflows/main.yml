@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
 
   schedule:
+
+    - cron: '05 23 * * *'
+      timezone: 'Europe/Zurich'
     - cron: '30 18 * * *'
       timezone: 'Europe/Zurich'
 
