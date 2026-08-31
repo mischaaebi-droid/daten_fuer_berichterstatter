@@ -5,8 +5,8 @@ on:
 
   schedule:
 
-    - cron: '5 23 * * *'
-      timezone: 'Europe/Zurich'
+    # 23:05 Schweizer Zeit (Sommerzeit UTC+2 -> 21:05 UTC)
+    - cron: '40 21 * * *'
     - cron: '30 18 * * *'
       timezone: 'Europe/Zurich'
 
