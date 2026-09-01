@@ -1,9 +1,16 @@
-# daten_fuer_berichterstatter
+# Aktionauslöser mit Zeitschalter täglich
 
 name: Bundesgericht Scraper
 
 on:
   workflow_dispatch:
+
+  schedule:
+
+   # 23:05 Schweizer Zeit (Sommerzeit UTC+2 -> 21:05 UTC)
+    - cron: '40 21 * * *'
+    # 18:30 Schweizer Zeit (Sommerzeit UTC+2 -> 16:30 UTC)
+    - cron: '30 16 * * *'
 
 permissions:
   contents: write
@@ -27,7 +34,7 @@ jobs:
           playwright install chromium
 
       - name: Bundesgericht scrapen und analysieren
-        run: python bundesgericht_tagesurteile.py --date 20260828
+        run: python bundesgericht_tagesurteile.py
        
 
       - name: JSON auf GitHub speichern
