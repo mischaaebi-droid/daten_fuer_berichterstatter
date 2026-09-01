@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "updated_at": "2026-09-01T18:14:59+02:00",
+  "updated_at": "2026-09-01T20:14:47+02:00",
   "decisions": {
     "13Y_1/2026": {
       "publication_date": "2026-08-21",
@@ -3379,9 +3379,9 @@
           "role": "mitglied"
         },
         {
-          "name": "Hänni",
-          "full_name": "Julia Hänni",
-          "party": "Die Mitte",
+          "name": "D. Hänni",
+          "full_name": "Dominique Hänni",
+          "party": "SP",
           "role": "mitglied"
         }
       ]
@@ -4474,6 +4474,34 @@
         }
       ]
     },
+    "1C_325/2024": {
+      "publication_date": "2026-08-20",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "gutgeheissen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Haag",
+          "full_name": "Stefan Haag",
+          "party": "GLP",
+          "role": "praesident"
+        },
+        {
+          "name": "Kneubühler",
+          "full_name": "Lorenz Kneubühler",
+          "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Müller",
+          "full_name": "Thomas Müller",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
     "1C_325/2026": {
       "publication_date": "2026-06-18",
       "legal_area": "Öffentliches Recht",
@@ -5531,9 +5559,9 @@
           "role": "mitglied"
         },
         {
-          "name": "Hänni",
-          "full_name": "Julia Hänni",
-          "party": "Die Mitte",
+          "name": "D. Hänni",
+          "full_name": "Dominique Hänni",
+          "party": "SP",
           "role": "mitglied"
         }
       ]
@@ -7932,19 +7960,13 @@
       "entscheid": "abgeschrieben",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
-      "judge_count": 2,
+      "judge_count": 1,
       "judges": [
         {
           "name": "Kneubühler",
           "full_name": "Lorenz Kneubühler",
           "party": "SP",
-          "role": "mitglied"
-        },
-        {
-          "name": "Einzelrichter",
-          "full_name": "Einzelrichter",
-          "party": null,
-          "role": "mitglied"
+          "role": "einzelrichter"
         }
       ]
     },
@@ -8269,9 +8291,9 @@
           "role": "mitglied"
         },
         {
-          "name": "Hänni",
-          "full_name": "Julia Hänni",
-          "party": "Die Mitte",
+          "name": "D. Hänni",
+          "full_name": "Dominique Hänni",
+          "party": "SP",
           "role": "mitglied"
         }
       ]
@@ -8833,9 +8855,9 @@
           "role": "mitglied"
         },
         {
-          "name": "Hänni",
-          "full_name": "Julia Hänni",
-          "party": "Die Mitte",
+          "name": "D. Hänni",
+          "full_name": "Dominique Hänni",
+          "party": "SP",
           "role": "mitglied"
         }
       ]
@@ -9397,9 +9419,9 @@
           "role": "mitglied"
         },
         {
-          "name": "Hänni",
-          "full_name": "Julia Hänni",
-          "party": "Die Mitte",
+          "name": "D. Hänni",
+          "full_name": "Dominique Hänni",
+          "party": "SP",
           "role": "mitglied"
         }
       ]
@@ -9749,9 +9771,9 @@
           "role": "mitglied"
         },
         {
-          "name": "Hänni",
-          "full_name": "Julia Hänni",
-          "party": "Die Mitte",
+          "name": "D. Hänni",
+          "full_name": "Dominique Hänni",
+          "party": "SP",
           "role": "mitglied"
         }
       ]
@@ -10921,9 +10943,9 @@
           "role": "mitglied"
         },
         {
-          "name": "Knebühler",
-          "full_name": "Knebühler",
-          "party": null,
+          "name": "Kneubühler",
+          "full_name": "Lorenz Kneubühler",
+          "party": "SP",
           "role": "mitglied"
         },
         {
@@ -11585,9 +11607,9 @@
           "role": "mitglied"
         },
         {
-          "name": "Hänni",
-          "full_name": "Julia Hänni",
-          "party": "Die Mitte",
+          "name": "D. Hänni",
+          "full_name": "Dominique Hänni",
+          "party": "SP",
           "role": "mitglied"
         }
       ]
@@ -11891,9 +11913,9 @@
           "role": "praesident"
         },
         {
-          "name": "Kneubüher",
-          "full_name": "Kneubüher",
-          "party": null,
+          "name": "Kneubühler",
+          "full_name": "Lorenz Kneubühler",
+          "party": "SP",
           "role": "mitglied"
         },
         {
@@ -12885,9 +12907,9 @@
           "role": "mitglied"
         },
         {
-          "name": "Hänni",
-          "full_name": "Julia Hänni",
-          "party": "Die Mitte",
+          "name": "D. Hänni",
+          "full_name": "Dominique Hänni",
+          "party": "SP",
           "role": "mitglied"
         }
       ]
@@ -12913,9 +12935,9 @@
           "role": "mitglied"
         },
         {
-          "name": "Hänni",
-          "full_name": "Julia Hänni",
-          "party": "Die Mitte",
+          "name": "D. Hänni",
+          "full_name": "Dominique Hänni",
+          "party": "SP",
           "role": "mitglied"
         }
       ]
@@ -14589,9 +14611,9 @@
           "role": "mitglied"
         },
         {
-          "name": "Hänni D",
-          "full_name": "Hänni D",
-          "party": null,
+          "name": "D. Hänni",
+          "full_name": "Dominique Hänni",
+          "party": "SP",
           "role": "mitglied"
         }
       ]
@@ -15554,25 +15576,13 @@
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
-      "judge_count": 5,
+      "judge_count": 3,
       "judges": [
         {
           "name": "Donzallaz",
           "full_name": "Yves Donzallaz",
           "party": "parteilos (ex SVP)",
           "role": "praesident"
-        },
-        {
-          "name": "Mme",
-          "full_name": "Mme",
-          "party": null,
-          "role": "mitglied"
-        },
-        {
-          "name": "et MM. les Juges fédéraux Donzallaz",
-          "full_name": "et MM. les Juges fédéraux Donzallaz",
-          "party": null,
-          "role": "mitglied"
         },
         {
           "name": "Ryter",
@@ -25357,9 +25367,9 @@
       "judge_count": 3,
       "judges": [
         {
-          "name": "Donzalaz",
-          "full_name": "Donzalaz",
-          "party": null,
+          "name": "Donzallaz",
+          "full_name": "Yves Donzallaz",
+          "party": "parteilos (ex SVP)",
           "role": "praesident"
         },
         {
@@ -59205,9 +59215,9 @@
       "judge_count": 3,
       "judges": [
         {
-          "name": "MM. le Juges fédéraux Bovey",
-          "full_name": "MM. le Juges fédéraux Bovey",
-          "party": null,
+          "name": "Bovey",
+          "full_name": "Grégory Bovey",
+          "party": "FDP",
           "role": "mitglied"
         },
         {
