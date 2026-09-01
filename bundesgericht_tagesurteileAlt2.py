@@ -100,8 +100,6 @@ def scrape_daily_decisions(
 
 
 TEXT_CORRECTIONS = {
-
-    
     "IIe Cour de droit pénal MM. et Mme les Juges fédéraux Abrecht, Président, Koch et Hofmann.":
         "IIe Cour de droit pénal Composition MM. et Mme les Juges fédéraux Abrecht, Président, Koch et Hofmann.",
     "I. öffentlich-rechtliche Abteilung Bundesrichter Müller, präsidierendes Mitglied, Bundesrichter Chaix, Kneubühler,":
@@ -123,16 +121,6 @@ TEXT_CORRECTIONS = {
 }
 
 NAME_CORRECTIONS = {
-
-    "Knebühler": "Kneubühler",
-    "Kneubüher": "Kneubühler",
-    "Donzalaz": "Donzallaz",
-    "MM. le Juges fédéraux Bovey": "Bovey",
-    "et MM. les Juges fédéraux Donzallaz": "Donzallaz",
-    "Hänni D": "D. Hänni",
-    "Hänni D.": "D. Hänni",
-    
-    
     "Petrik": "Petrik-Haltiner", "Hermann": "Herrmann", "Muschetti": "Muschietti",
     "van de Graaaf": "van de Graaf", "Van de Graaf": "van de Graaf",
     "Hoffmann": "Hofmann", "H ofmann": "Hofmann", "Von Felten": "von Felten",
@@ -199,7 +187,7 @@ def extract_president(block: str, language: str) -> str | None:
         flags = re.DOTALL | re.IGNORECASE
     elif language == "de":
         pattern = (
-            r"(?:nebenamtliche[rn]?\s+)?Bundesrichter(?:in)?\s+(.+?),\s*"
+            r"Bundesrichter(?:in)?\s+(.+?),\s*"
             r"(?:Präsident|Präsidentin|(?:als\s+)?präsidierendes Mitglied)"
         )
         flags = 0
@@ -219,16 +207,7 @@ def extract_president(block: str, language: str) -> str | None:
 def extract_single_judge(block: str, language: str) -> str | None:
     """Separate Einzelrichter-Erkennung aus dem Vorbild-Notebook."""
     if language == "de":
-        pattern = (
-            r"(?:nebenamtliche[rn]?\s+)?Bundesrichter(?:in)?\s+"
-            r"(.+?),\s+(?:als\s+)?Einzelrichter(?:in)?"
-        )
-        
-        
-        
-        
-        
-        
+        pattern = r"Bundesrichter(?:in)?\s+(.+?),\s+als Einzelrichter(?:in)?"
         flags = 0
     elif language == "fr":
         pattern = (
@@ -266,22 +245,6 @@ def extract_judges(
     }
     for wrong, correct in block_corrections.items():
         block = block.replace(wrong, correct)
-    
-    # Dominique Hänni eindeutig von Julia Hänni unterscheiden.
-    # Dominique ist nebenamtliche Bundesrichterin und wird in der
-    # Richter-Masterliste als "D. Hänni" geführt.
-    block = re.sub(
-        r"nebenamtliche\s+Bundesrichterin\s+(?:D\.\s*)?Hänni(?:\s+D\.)?",
-        "nebenamtliche Bundesrichterin D. Hänni",
-        block,
-        flags=re.IGNORECASE,
-    )
-    
-    president = extract_president(block, language)
-
-    
-
-    
 
     if language == "de":
         judge_text = re.split(
@@ -306,9 +269,9 @@ def extract_judges(
             "Präsident", "Präsidentin", "Bundesrichter", "Bundesrichterin",
             "präsidierendes Mitglied", "als präsidierendes Mitglied",
             "präsidierendes Miglied", "als Einzelrichter",
-            "als Einzelrichterin", "Einzelrichter", "Einzelrichterin",
-            "als Instruktionsrichterin", "als Instruktionsrichter",
-            "als präsidierendes Miglied", "präsisierendes Mitglied",
+            "als Einzelrichterin", "als Instruktionsrichterin",
+            "als Instruktionsrichter", "als präsidierendes Miglied",
+            "Einzelrichterin", "präsisierendes Mitglied",
         }
 
     elif language == "fr":
@@ -605,14 +568,7 @@ def save_yearly_json(
         for _, judge in judge_rows.iterrows():
             name = str(judge["name"]).strip()
             both_names = judge.get("both_names")
-            if pd.isna(both_names):
-                print(f"WARNUNG: Richter nicht in Masterliste gefunden: {name}")
-                continue
-
-            full_name = str(both_names).strip()
-           
-           
-           
+            full_name = name if pd.isna(both_names) else str(both_names).strip()
             if single_judge:
                 role = "einzelrichter"
             elif pd.notna(president) and name == str(president).strip():
