@@ -7,9 +7,9 @@ on:
 
   schedule:
 
-   # 23:05 Schweizer Zeit (Sommerzeit UTC+2 -> 21:05 UTC)
+   # # # 23:05 Schweizer Zeit (Sommerzeit UTC+2 -> 21:05 UTC)
     - cron: '40 21 * * *'
-    # 18:30 Schweizer Zeit (Sommerzeit UTC+2 -> 16:30 UTC)
+    # # # 18:30 Schweizer Zeit (Sommerzeit UTC+2 -> 16:30 UTC)
     - cron: '30 16 * * *'
 
 permissions:
