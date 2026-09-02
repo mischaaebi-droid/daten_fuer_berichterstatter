@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "updated_at": "2026-09-01T20:14:47+02:00",
+  "updated_at": "2026-09-02T21:55:01+02:00",
   "decisions": {
     "13Y_1/2026": {
       "publication_date": "2026-08-21",
@@ -5754,6 +5754,34 @@
         }
       ]
     },
+    "1C_380/2025": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Haag",
+          "full_name": "Stefan Haag",
+          "party": "GLP",
+          "role": "praesident"
+        },
+        {
+          "name": "Kneubühler",
+          "full_name": "Lorenz Kneubühler",
+          "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Merz",
+          "full_name": "Laurent Merz",
+          "party": "Grüne",
+          "role": "mitglied"
+        }
+      ]
+    },
     "1C_381/2025": {
       "publication_date": "2026-03-03",
       "legal_area": "Öffentliches Recht",
@@ -9426,6 +9454,34 @@
         }
       ]
     },
+    "1C_582/2025": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Haag",
+          "full_name": "Stefan Haag",
+          "party": "GLP",
+          "role": "praesident"
+        },
+        {
+          "name": "Kneubühler",
+          "full_name": "Lorenz Kneubühler",
+          "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Merz",
+          "full_name": "Laurent Merz",
+          "party": "Grüne",
+          "role": "mitglied"
+        }
+      ]
+    },
     "1C_583/2025": {
       "publication_date": "2026-06-16",
       "legal_area": "Öffentliches Recht",
@@ -11314,6 +11370,34 @@
           "name": "Merz",
           "full_name": "Laurent Merz",
           "party": "Grüne",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "1C_710/2025": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Haag",
+          "full_name": "Stefan Haag",
+          "party": "GLP",
+          "role": "praesident"
+        },
+        {
+          "name": "Kneubühler",
+          "full_name": "Lorenz Kneubühler",
+          "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Müller",
+          "full_name": "Thomas Müller",
+          "party": "SVP",
           "role": "mitglied"
         }
       ]
@@ -25138,6 +25222,46 @@
         }
       ]
     },
+    "2E_5/2024": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 5,
+      "judges": [
+        {
+          "name": "Aubry Girardin",
+          "full_name": "Florence Aubry Girardin",
+          "party": "Grüne",
+          "role": "praesident"
+        },
+        {
+          "name": "Donzallaz",
+          "full_name": "Yves Donzallaz",
+          "party": "parteilos (ex SVP)",
+          "role": "mitglied"
+        },
+        {
+          "name": "Hänni",
+          "full_name": "Julia Hänni",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        },
+        {
+          "name": "Ryter",
+          "full_name": "Marianne Ryter",
+          "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Kradolfer",
+          "full_name": "Matthias Kradolfer",
+          "party": "FDP",
+          "role": "mitglied"
+        }
+      ]
+    },
     "2E_6/2024": {
       "publication_date": "2026-04-21",
       "legal_area": "Öffentliches Recht",
@@ -34050,6 +34174,34 @@
         }
       ]
     },
+    "4A_547/2025": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Zivilrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Hurni",
+          "full_name": "Christoph Hurni",
+          "party": "GLP",
+          "role": "praesident"
+        },
+        {
+          "name": "Denys",
+          "full_name": "Christian Denys",
+          "party": "Grüne",
+          "role": "mitglied"
+        },
+        {
+          "name": "May Canellas",
+          "full_name": "Marie-Chantal May Canellas",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        }
+      ]
+    },
     "4A_549/2025": {
       "publication_date": "2026-01-29",
       "legal_area": "Zivilrecht",
@@ -41770,6 +41922,34 @@
         }
       ]
     },
+    "5A_110/2026": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Zivilrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Hartmann",
+          "full_name": "Stephan Hartmann",
+          "party": "Grüne",
+          "role": "praesident"
+        },
+        {
+          "name": "De Rossa",
+          "full_name": "Federica De Rossa",
+          "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Josi",
+          "full_name": "Christian Josi",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
     "5A_1100/2025": {
       "publication_date": "2026-06-22",
       "legal_area": "Zivilrecht",
@@ -46414,6 +46594,34 @@
         }
       ]
     },
+    "5A_318/2026": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Zivilrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Bovey",
+          "full_name": "Grégory Bovey",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "Josi",
+          "full_name": "Christian Josi",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Brunner",
+          "full_name": "Arthur Brunner",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
     "5A_32/2026": {
       "publication_date": "2026-07-21",
       "legal_area": "Zivilrecht",
@@ -46470,6 +46678,34 @@
           "name": "Hartmann",
           "full_name": "Stephan Hartmann",
           "party": "Grüne",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "5A_322/2026": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Zivilrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Hartmann",
+          "full_name": "Stephan Hartmann",
+          "party": "Grüne",
+          "role": "praesident"
+        },
+        {
+          "name": "De Rossa",
+          "full_name": "Federica De Rossa",
+          "party": "SP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Josi",
+          "full_name": "Christian Josi",
+          "party": "SVP",
           "role": "mitglied"
         }
       ]
@@ -52358,6 +52594,22 @@
         }
       ]
     },
+    "5A_614/2026": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Zivilrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Bovey",
+          "full_name": "Grégory Bovey",
+          "party": "FDP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
     "5A_615/2024": {
       "publication_date": "2026-01-22",
       "legal_area": "Zivilrecht",
@@ -54678,6 +54930,34 @@
         }
       ]
     },
+    "5A_763/2026": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Zivilrecht",
+      "entscheid": "abgeschrieben",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Bovey",
+          "full_name": "Grégory Bovey",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "Josi",
+          "full_name": "Christian Josi",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Brunner",
+          "full_name": "Arthur Brunner",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
     "5A_764/2025": {
       "publication_date": "2026-08-28",
       "legal_area": "Zivilrecht",
@@ -55151,6 +55431,22 @@
           "full_name": "Céline Courbat",
           "party": "SVP",
           "role": "mitglied"
+        }
+      ]
+    },
+    "5A_802/2026": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Zivilrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Bovey",
+          "full_name": "Grégory Bovey",
+          "party": "FDP",
+          "role": "einzelrichter"
         }
       ]
     },
@@ -55659,6 +55955,34 @@
           "full_name": "Grégory Bovey",
           "party": "FDP",
           "role": "einzelrichter"
+        }
+      ]
+    },
+    "5A_862/2025": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Zivilrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Bovey",
+          "full_name": "Grégory Bovey",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "Josi",
+          "full_name": "Christian Josi",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Brunner",
+          "full_name": "Arthur Brunner",
+          "party": "SVP",
+          "role": "mitglied"
         }
       ]
     },
@@ -82282,6 +82606,34 @@
         }
       ]
     },
+    "7B_1304/2024": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Strafrecht",
+      "entscheid": "gutgeheissen",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Abrecht",
+          "full_name": "Bernard Abrecht",
+          "party": "SP",
+          "role": "praesident"
+        },
+        {
+          "name": "Kölz",
+          "full_name": "Christian Kölz",
+          "party": "Grüne",
+          "role": "mitglied"
+        },
+        {
+          "name": "Brunner",
+          "full_name": "Arthur Brunner",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
     "7B_1304/2025": {
       "publication_date": "2026-01-30",
       "legal_area": "Strafrecht",
@@ -82982,6 +83334,46 @@
         }
       ]
     },
+    "7B_133/2026": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Strafrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": "staat",
+      "beschwerdegegner": "privat",
+      "judge_count": 5,
+      "judges": [
+        {
+          "name": "Abrecht",
+          "full_name": "Bernard Abrecht",
+          "party": "SP",
+          "role": "praesident"
+        },
+        {
+          "name": "Rüedi",
+          "full_name": "Yves Rüedi",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Koch",
+          "full_name": "Sonja Koch",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Kölz",
+          "full_name": "Christian Kölz",
+          "party": "Grüne",
+          "role": "mitglied"
+        },
+        {
+          "name": "Hofmann",
+          "full_name": "Yann-Eric Hofmann",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        }
+      ]
+    },
     "7B_1330/2025": {
       "publication_date": "2026-02-05",
       "legal_area": "Strafrecht",
@@ -83022,6 +83414,34 @@
           "name": "Kölz",
           "full_name": "Christian Kölz",
           "party": "Grüne",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "7B_1333/2024": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Strafrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Abrecht",
+          "full_name": "Bernard Abrecht",
+          "party": "SP",
+          "role": "praesident"
+        },
+        {
+          "name": "Koch",
+          "full_name": "Sonja Koch",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Hofmann",
+          "full_name": "Yann-Eric Hofmann",
+          "party": "Die Mitte",
           "role": "mitglied"
         }
       ]
@@ -85574,6 +85994,46 @@
           "name": "Kölz",
           "full_name": "Christian Kölz",
           "party": "Grüne",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "7B_165/2026": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Strafrecht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": "staat",
+      "beschwerdegegner": "privat",
+      "judge_count": 5,
+      "judges": [
+        {
+          "name": "Abrecht",
+          "full_name": "Bernard Abrecht",
+          "party": "SP",
+          "role": "praesident"
+        },
+        {
+          "name": "Rüedi",
+          "full_name": "Yves Rüedi",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Koch",
+          "full_name": "Sonja Koch",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Kölz",
+          "full_name": "Christian Kölz",
+          "party": "Grüne",
+          "role": "mitglied"
+        },
+        {
+          "name": "Hofmann",
+          "full_name": "Yann-Eric Hofmann",
+          "party": "Die Mitte",
           "role": "mitglied"
         }
       ]
@@ -89418,6 +89878,34 @@
         }
       ]
     },
+    "7B_376/2025": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Strafrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Koch",
+          "full_name": "Sonja Koch",
+          "party": "SVP",
+          "role": "praesident"
+        },
+        {
+          "name": "Kölz",
+          "full_name": "Christian Kölz",
+          "party": "Grüne",
+          "role": "mitglied"
+        },
+        {
+          "name": "Hofmann",
+          "full_name": "Yann-Eric Hofmann",
+          "party": "Die Mitte",
+          "role": "mitglied"
+        }
+      ]
+    },
     "7B_376/2026": {
       "publication_date": "2026-06-25",
       "legal_area": "Strafrecht",
@@ -90050,6 +90538,34 @@
         }
       ]
     },
+    "7B_411/2025": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Strafrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Abrecht",
+          "full_name": "Bernard Abrecht",
+          "party": "SP",
+          "role": "praesident"
+        },
+        {
+          "name": "van de Graaf",
+          "full_name": "Beatrice van de Graaf",
+          "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Koch",
+          "full_name": "Sonja Koch",
+          "party": "SVP",
+          "role": "mitglied"
+        }
+      ]
+    },
     "7B_412/2026": {
       "publication_date": "2026-08-04",
       "legal_area": "Strafrecht",
@@ -90191,6 +90707,22 @@
           "full_name": "Yann-Eric Hofmann",
           "party": "Die Mitte",
           "role": "mitglied"
+        }
+      ]
+    },
+    "7B_418/2026": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Strafrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Koch",
+          "full_name": "Sonja Koch",
+          "party": "SVP",
+          "role": "einzelrichter"
         }
       ]
     },
@@ -113396,6 +113928,34 @@
           "name": "Heine",
           "full_name": "Alexia Heine",
           "party": "SVP",
+          "role": "mitglied"
+        },
+        {
+          "name": "Métral",
+          "full_name": "Jean Métral",
+          "party": "Grüne",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "8C_745/2025": {
+      "publication_date": "2026-09-02",
+      "legal_area": "Öffentliches Recht",
+      "entscheid": "abgewiesen",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Viscione",
+          "full_name": "Daniela Viscione",
+          "party": "SVP",
+          "role": "praesident"
+        },
+        {
+          "name": "Maillard",
+          "full_name": "Marcel Maillard",
+          "party": "Die Mitte",
           "role": "mitglied"
         },
         {
