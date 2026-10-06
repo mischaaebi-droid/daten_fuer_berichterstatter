@@ -2,8 +2,12 @@ name: Bundesgericht Scraper
 
 on:
   workflow_dispatch:
+    inputs:
+      date:
+        description: 'Datum zum Nachholen (YYYYMMDD), leer = heute'
+        required: false
+        type: string
   schedule:
-    # 17:30 UTC = 19:30 MESZ (Sommer) bzw. 18:30 MEZ (Winter)
     - cron: '30 17 * * *'
 
 permissions:
@@ -31,7 +35,12 @@ jobs:
         run: pip install beautifulsoup4 lxml pandas openpyxl
 
       - name: Bundesgericht scrapen und analysieren
-        run: python bundesgericht_tagesurteile_rss.py
+        run: |
+          if [ -n "${{ inputs.date }}" ]; then
+            python bundesgericht_tagesurteile_rss.py --date "${{ inputs.date }}"
+          else
+            python bundesgericht_tagesurteile_rss.py
+          fi
 
       - name: JSON auf GitHub speichern
         run: |
@@ -40,5 +49,5 @@ jobs:
           git add -A data/
           git diff --cached --quiet && exit 0
           git commit -m "Bundesgerichtsdaten aktualisieren"
-          git pull --rebase
+          git pull --rebase --autostash
           git push
