@@ -35,7 +35,12 @@ jobs:
         run: pip install beautifulsoup4 lxml pandas openpyxl
 
       - name: Bundesgericht scrapen und analysieren
-        run: python bundesgericht_tagesurteile_rss.py
+        run: |
+          if [ -n "${{ inputs.date }}" ]; then
+            python bundesgericht_tagesurteile_rss.py --date "${{ inputs.date }}"
+          else
+            python bundesgericht_tagesurteile_rss.py
+          fi
 
       - name: JSON auf GitHub speichern
         run: |
