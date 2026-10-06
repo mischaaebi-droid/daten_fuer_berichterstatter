@@ -26,10 +26,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-          cache: 'pip'
 
       - name: Python-Pakete installieren
-        run: pip install -r requirements.txt
+        run: pip install beautifulsoup4 lxml pandas openpyxl
 
       - name: Bundesgericht scrapen und analysieren
         run: python bundesgericht_tagesurteile_rss.py
