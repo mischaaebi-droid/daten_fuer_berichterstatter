@@ -2,8 +2,12 @@ name: Bundesgericht Scraper
 
 on:
   workflow_dispatch:
+    inputs:
+      date:
+        description: 'Datum zum Nachholen (YYYYMMDD), leer = heute'
+        required: false
+        type: string
   schedule:
-    # 17:30 UTC = 19:30 MESZ (Sommer) bzw. 18:30 MEZ (Winter)
     - cron: '30 17 * * *'
 
 permissions:
