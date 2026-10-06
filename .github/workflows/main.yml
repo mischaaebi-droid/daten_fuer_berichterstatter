@@ -49,5 +49,5 @@ jobs:
           git add -A data/
           git diff --cached --quiet && exit 0
           git commit -m "Bundesgerichtsdaten aktualisieren"
-          git pull --rebase
+          git pull --rebase --autostash
           git push
