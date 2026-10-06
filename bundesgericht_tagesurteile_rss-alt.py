@@ -35,64 +35,6 @@ DEFAULT_HTML_DIR = SCRIPT_DIR / "aktuelle_urteile"
 DEFAULT_JUDGES_FILE = SCRIPT_DIR / "list_federal_judges_party.xlsx"
 
 
-LEGAL_AREAS = {
-    "I1": "Grundrecht",
-    "I2": "Bürgerrecht und Ausländerrecht",
-    "I3": "Staatshaftung",
-    "I4": "Öffentliches Dienstverhältnis",
-    "I5": "Politische Rechte",
-    "I6": "Rechtshilfe und Auslieferung",
-    "I7": "Unterrichtswesen und Berufsausbildung",
-    "I9": "Ökologisches Gleichgewicht",
-    "I10": "Sicherheits- und Friedenspolitik",
-    "I11": "Öffentliche Finanzen & Abgaberecht",
-    "I12": "Raumplanung und öffentliches Baurecht",
-    "I13": "Enteignung",
-    "I15": "Gesundheitswesen & soziale Sicherheit",
-    "I16": "Wirtschaft",
-    "I18": "Schuldbetreibungs- und Konkursrecht",
-    "I21": "Immaterialgüter-, Wettbewerbs- und Kartellrecht",
-    "I30": "Alters- und Hinterlassenenversicherung",
-    "I31": "Invalidenversicherung",
-    "I32": "Ergänzungsleistungen",
-    "I33": "Berufliche Vorsorge",
-    "I34": "Krankenversicherung",
-    "I35": "Unfallversicherung",
-    "I36": "Militärversicherung",
-    "I37": "Erwerbsersatzordnung",
-    "I38": "Familienzulagen und kantonale Sozialversicherung",
-    "I39": "Arbeitslosenversicherung",
-    "I141": "Energie",
-    "I142": "Strassenbau und Strassenverkehr",
-    "I143": "Verkehr (ohne Strassenverkehr)",
-    "I144": "Post- und Fernmeldeverkehr",
-    "I145": "Mass media",
-    "I171": "Zivilprozess",
-    "I172": "Strafprozess",
-    "I173": "Verwaltungsverfahren",
-    "I174": "Zuständigkeitsfragen / verfassungsmässiger Richter",
-    "I176": "Schiedsgerichtsbarkeit",
-    "I177": "Aufsichtsbeschwerden",
-    "I192": "Personenrecht",
-    "I193": "Familienrecht",
-    "I194": "Erbrecht",
-    "I195": "Sachenrecht",
-    "I196": "Register",
-    "I201": "Obligationenrecht (allgemein)",
-    "I202": "Vertragsrecht",
-    "I203": "Gesellschaftsrecht",
-    "I205": "Haftpflichtrecht",
-    "I221": "Strafrecht (allgemein)",
-    "I222": "Straftaten",
-    "I223": "Verwaltungsstrafrecht",
-    "I224": "Straf- und Massnahmenvollzug",
-    "I": "keine Zuordnung",
-}
-
-# RSS-Metadaten der im aktuellen Lauf gespeicherten HTML-Dateien.
-RSS_METADATA: dict[str, dict[str, str | None]] = {}
-
-
 def log(message: str, log_file: Path) -> None:
     print(message)
     with log_file.open("a", encoding="utf-8") as handle:
@@ -140,25 +82,8 @@ def rss_decisions_for_day(day: str) -> list[dict[str, object]]:
             for element in item.findall("bgerlaw:dossiers/bgerlaw:dossier", ns)
             if (element.text or "").strip()
         ]
-        matiere_element = item.find("bgerlaw:matiere", ns)
-        legal_area_code = ""
-        if matiere_element is not None:
-            legal_area_code = (
-                matiere_element.get("id")
-                or matiere_element.get("ID")
-                or ""
-            ).strip()
-        legal_area_name = LEGAL_AREAS.get(legal_area_code)
-        if legal_area_code and legal_area_name is None:
-            print(f"WARNUNG: Unbekannter Rechtsgebiet-Code im RSS: {legal_area_code}")
-
         if link:
-            decisions.append({
-                "link": link,
-                "dossiers": dossiers,
-                "legal_area_code": legal_area_code or None,
-                "legal_area": legal_area_name,
-            })
+            decisions.append({"link": link, "dossiers": dossiers})
     return decisions
 
 
@@ -198,10 +123,6 @@ def scrape_daily_decisions(day: str, output_dir: Path, log_file: Path) -> list[P
                 continue
             target.write_text(html, encoding="utf-8")
             saved_files.append(target)
-            RSS_METADATA[target.name] = {
-                "legal_area_code": item.get("legal_area_code"),
-                "legal_area": item.get("legal_area"),
-            }
             log(f"Gespeichert: {target.name}", log_file)
         except Exception as exc:
             log(f"Fehler beim Urteil {decision_sign}: {exc}", log_file)
@@ -549,7 +470,7 @@ def extract_judges(
 
     return president, judges, single_judge, single_judge_name
 
-def legacy_legal_area(decision_sign: str) -> str:
+def legal_area(decision_sign: str) -> str:
     match = re.search(r"^(\d+)[A-Z]_", decision_sign)
 
     return {
@@ -598,13 +519,6 @@ def analyse_files(files: list[Path], judges_file: Path) -> tuple[pd.DataFrame, p
         president, judges, single_judge, single_judge_name = extract_judges(block, language)
         other_judges = [name for name in judges if name != president]
         parties = search_verfahrensbeteiligte(soup, file.name)
-        rss_metadata = RSS_METADATA.get(file.name, {})
-        legal_area_code = rss_metadata.get("legal_area_code")
-        legal_area_name = rss_metadata.get("legal_area")
-        # Bei --analyse-only fehlen RSS-Metadaten; dann bleibt die bisherige
-        # grobe Einteilung als Rückfalllösung erhalten.
-        if legal_area_name is None:
-            legal_area_name = legacy_legal_area(decision_sign)
 
         results.append({
             "id_filename": filename_id, "filename": file.name,
@@ -616,8 +530,7 @@ def analyse_files(files: list[Path], judges_file: Path) -> tuple[pd.DataFrame, p
             "weiterer_richter2": other_judges[1] if len(other_judges) > 1 else None,
             "weiterer_richter3": other_judges[2] if len(other_judges) > 2 else None,
             "weiterer_richter4": other_judges[3] if len(other_judges) > 3 else None,
-            "entscheid": search_decisions(soup),
-            "legal_area_code": legal_area_code, "legal area": legal_area_name,
+            "entscheid": search_decisions(soup), "legal area": legal_area(decision_sign),
             "beschwerdefuehrer": parties["beschwerdefuehrer_staat"],
             "beschwerdegegner": parties["beschwerdegegner_staat"],
         })
@@ -627,7 +540,7 @@ def analyse_files(files: list[Path], judges_file: Path) -> tuple[pd.DataFrame, p
         return raw, pd.DataFrame()
 
     long = raw.melt(
-        id_vars=["id_filename", "decision_sign", "entscheid", "legal_area_code", "legal area", "beschwerdefuehrer", "beschwerdegegner"],
+        id_vars=["id_filename", "decision_sign", "entscheid", "legal area", "beschwerdefuehrer", "beschwerdegegner"],
         value_vars=["praesident", "weiterer_richter1", "weiterer_richter2", "weiterer_richter3", "weiterer_richter4"],
         var_name="funktion", value_name="name",
     )
@@ -635,7 +548,7 @@ def analyse_files(files: list[Path], judges_file: Path) -> tuple[pd.DataFrame, p
     merged = long.merge(judges, on="name", how="left").drop(columns="party_raw", errors="ignore")
     
     cleaned = merged[[
-        "id_filename", "decision_sign", "name", "both_names", "party", "legal_area_code", "legal area", "entscheid",
+        "id_filename", "decision_sign", "name", "both_names", "party", "legal area", "entscheid",
         "beschwerdefuehrer", "beschwerdegegner",
     ]].dropna(subset=["name"])
     
@@ -751,7 +664,6 @@ def save_yearly_json(
 
         decisions[decision_sign] = {
             "publication_date": publication_date,
-            "legal_area_code": json_value(decision_row.get("legal_area_code")),
             "legal_area": json_value(decision_row.get("legal area")),
             "entscheid": json_value(decision_row.get("entscheid")),
             "beschwerdefuehrer": json_value(decision_row.get("beschwerdefuehrer")),
