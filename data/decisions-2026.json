@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "updated_at": "2026-10-06T20:57:21+02:00",
+  "updated_at": "2026-10-06T21:23:52+02:00",
   "decisions": {
     "13Y_1/2026": {
       "publication_date": "2026-08-21",
@@ -60,7 +60,8 @@
     },
     "13Y_3/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "AndererBereich",
+      "legal_area_code": "I173",
+      "legal_area": "Verwaltungsverfahren",
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -8912,7 +8913,8 @@
     },
     "1C_486/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Öffentliches Recht",
+      "legal_area_code": "I142",
+      "legal_area": "Strassenbau und Strassenverkehr",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -9100,7 +9102,8 @@
     },
     "1C_492/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Öffentliches Recht",
+      "legal_area_code": "I6",
+      "legal_area": "Rechtshilfe und Auslieferung",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -15136,7 +15139,8 @@
     },
     "2C_112/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Öffentliches Recht",
+      "legal_area_code": "I2",
+      "legal_area": "Bürgerrecht und Ausländerrecht",
       "entscheid": "gutgeheissen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -17320,7 +17324,8 @@
     },
     "2C_224/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Öffentliches Recht",
+      "legal_area_code": "I1",
+      "legal_area": "Grundrecht",
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -21684,7 +21689,8 @@
     },
     "2C_429/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Öffentliches Recht",
+      "legal_area_code": "I2",
+      "legal_area": "Bürgerrecht und Ausländerrecht",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -22784,7 +22790,8 @@
     },
     "2C_485/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Öffentliches Recht",
+      "legal_area_code": "I1",
+      "legal_area": "Grundrecht",
       "entscheid": "gutgeheissen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -32632,7 +32639,8 @@
     },
     "4A_232/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Zivilrecht",
+      "legal_area_code": "I203",
+      "legal_area": "Gesellschaftsrecht",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -35276,7 +35284,8 @@
     },
     "4A_356/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Zivilrecht",
+      "legal_area_code": "I202",
+      "legal_area": "Vertragsrecht",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -36376,7 +36385,8 @@
     },
     "4A_421/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Zivilrecht",
+      "legal_area_code": "I202",
+      "legal_area": "Vertragsrecht",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -37080,7 +37090,8 @@
     },
     "4A_463/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Zivilrecht",
+      "legal_area_code": "I203",
+      "legal_area": "Gesellschaftsrecht",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -38200,7 +38211,8 @@
     },
     "4A_53/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Zivilrecht",
+      "legal_area_code": "I18",
+      "legal_area": "Schuldbetreibungs- und Konkursrecht",
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -41164,7 +41176,8 @@
     },
     "4A_70/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Zivilrecht",
+      "legal_area_code": "I202",
+      "legal_area": "Vertragsrecht",
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -42152,7 +42165,8 @@
     },
     "4D_114/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Zivilrecht",
+      "legal_area_code": "I18",
+      "legal_area": "Schuldbetreibungs- und Konkursrecht",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -42356,7 +42370,8 @@
     },
     "4D_132/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Zivilrecht",
+      "legal_area_code": "I18",
+      "legal_area": "Schuldbetreibungs- und Konkursrecht",
       "entscheid": "abgeschrieben",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -45108,7 +45123,8 @@
     },
     "4F_24/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Zivilrecht",
+      "legal_area_code": "I203",
+      "legal_area": "Gesellschaftsrecht",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -50328,7 +50344,8 @@
     },
     "5A_226/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Zivilrecht",
+      "legal_area_code": "I192",
+      "legal_area": "Personenrecht",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -59144,7 +59161,8 @@
     },
     "5A_637/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Zivilrecht",
+      "legal_area_code": "I193",
+      "legal_area": "Familienrecht",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -59292,7 +59310,8 @@
     },
     "5A_647/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Zivilrecht",
+      "legal_area_code": "I193",
+      "legal_area": "Familienrecht",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -60468,7 +60487,8 @@
     },
     "5A_709/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Zivilrecht",
+      "legal_area_code": "I193",
+      "legal_area": "Familienrecht",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -87336,7 +87356,8 @@
     },
     "7B_1013/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Strafrecht",
+      "legal_area_code": "I172",
+      "legal_area": "Strafprozess",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": "privat",
       "beschwerdegegner": "staat",
@@ -96728,7 +96749,8 @@
     },
     "7B_185/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Strafrecht",
+      "legal_area_code": "I172",
+      "legal_area": "Strafprozess",
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": "privat",
       "beschwerdegegner": "staat",
@@ -106384,7 +106406,8 @@
     },
     "7B_68/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Strafrecht",
+      "legal_area_code": "I172",
+      "legal_area": "Strafprozess",
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": "privat",
       "beschwerdegegner": "staat",
@@ -108544,7 +108567,8 @@
     },
     "7B_8/2025": {
       "publication_date": "2026-10-05",
-      "legal_area": "Strafrecht",
+      "legal_area_code": "I172",
+      "legal_area": "Strafprozess",
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": "privat",
       "beschwerdegegner": "staat",
@@ -109912,7 +109936,8 @@
     },
     "7B_889/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Strafrecht",
+      "legal_area_code": "I172",
+      "legal_area": "Strafprozess",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": "privat",
       "beschwerdegegner": "staat",
@@ -111312,7 +111337,8 @@
     },
     "7B_965/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Strafrecht",
+      "legal_area_code": "I174",
+      "legal_area": "Zuständigkeitsfragen / verfassungsmässiger Richter",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": "privat",
       "beschwerdegegner": "staat",
@@ -113936,7 +113962,8 @@
     },
     "8C_127/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Öffentliches Recht",
+      "legal_area_code": "I35",
+      "legal_area": "Unfallversicherung",
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -118216,7 +118243,8 @@
     },
     "8C_282/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Öffentliches Recht",
+      "legal_area_code": "I31",
+      "legal_area": "Invalidenversicherung",
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -122820,7 +122848,8 @@
     },
     "8C_501/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Öffentliches Recht",
+      "legal_area_code": "I15",
+      "legal_area": "Gesundheitswesen & soziale Sicherheit",
       "entscheid": "abgeschrieben",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -137772,7 +137801,8 @@
     },
     "9C_578/2026, 9C_579/2026, 9C_580/2026, 9C_581/2026": {
       "publication_date": "2026-10-05",
-      "legal_area": "Öffentliches Recht",
+      "legal_area_code": "I34",
+      "legal_area": "Krankenversicherung",
       "entscheid": "nicht eingetreten",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
@@ -138776,7 +138806,8 @@
     },
     "9C_643/2025": {
       "publication_date": "2026-10-05",
-      "legal_area": "Öffentliches Recht",
+      "legal_area_code": "I11",
+      "legal_area": "Öffentliche Finanzen & Abgaberecht",
       "entscheid": "abgewiesen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
