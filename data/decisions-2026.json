@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "updated_at": "2026-10-08T23:36:42+02:00",
+  "updated_at": "2026-10-09T23:50:52+02:00",
   "decisions": {
     "13Y_1/2026": {
       "publication_date": "2026-08-21",
@@ -9187,6 +9187,23 @@
         }
       ]
     },
+    "1C_493/2026": {
+      "publication_date": "2026-10-09",
+      "legal_area_code": "I5",
+      "legal_area": "Politische Rechte",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Müller",
+          "full_name": "Thomas Müller",
+          "party": "SVP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
     "1C_494/2025": {
       "publication_date": "2026-09-25",
       "legal_area": "Öffentliches Recht",
@@ -9884,6 +9901,23 @@
         }
       ]
     },
+    "1C_524/2026": {
+      "publication_date": "2026-10-09",
+      "legal_area_code": "I1",
+      "legal_area": "Grundrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Müller",
+          "full_name": "Thomas Müller",
+          "party": "SVP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
     "1C_525/2025": {
       "publication_date": "2026-03-12",
       "legal_area": "Öffentliches Recht",
@@ -10290,6 +10324,23 @@
           "full_name": "Dominique Hänni",
           "party": "SP",
           "role": "mitglied"
+        }
+      ]
+    },
+    "1C_545/2026": {
+      "publication_date": "2026-10-09",
+      "legal_area_code": "I1",
+      "legal_area": "Grundrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Müller",
+          "full_name": "Thomas Müller",
+          "party": "SVP",
+          "role": "einzelrichter"
         }
       ]
     },
@@ -38272,6 +38323,23 @@
         }
       ]
     },
+    "4A_510/2026": {
+      "publication_date": "2026-10-09",
+      "legal_area_code": "I202",
+      "legal_area": "Vertragsrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Hurni",
+          "full_name": "Christoph Hurni",
+          "party": "GLP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
     "4A_512/2025": {
       "publication_date": "2026-01-20",
       "legal_area": "Zivilrecht",
@@ -64903,6 +64971,23 @@
         }
       ]
     },
+    "5A_940/2026": {
+      "publication_date": "2026-10-09",
+      "legal_area_code": "I18",
+      "legal_area": "Schuldbetreibungs- und Konkursrecht",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Bovey",
+          "full_name": "Grégory Bovey",
+          "party": "FDP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
     "5A_944/2025": {
       "publication_date": "2026-05-01",
       "legal_area": "Zivilrecht",
@@ -67649,6 +67734,35 @@
       "publication_date": "2026-04-09",
       "legal_area": "Zivilrecht",
       "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": null,
+      "beschwerdegegner": null,
+      "judge_count": 3,
+      "judges": [
+        {
+          "name": "Bovey",
+          "full_name": "Grégory Bovey",
+          "party": "FDP",
+          "role": "praesident"
+        },
+        {
+          "name": "Hartmann",
+          "full_name": "Stephan Hartmann",
+          "party": "Grüne",
+          "role": "mitglied"
+        },
+        {
+          "name": "De Rossa",
+          "full_name": "Federica De Rossa",
+          "party": "SP",
+          "role": "mitglied"
+        }
+      ]
+    },
+    "5F_55/2026": {
+      "publication_date": "2026-10-09",
+      "legal_area_code": "I193",
+      "legal_area": "Familienrecht",
+      "entscheid": "abgewiesen",
       "beschwerdefuehrer": null,
       "beschwerdegegner": null,
       "judge_count": 3,
@@ -89390,6 +89504,23 @@
         }
       ]
     },
+    "7B_1066/2026": {
+      "publication_date": "2026-10-09",
+      "legal_area_code": "I224",
+      "legal_area": "Straf- und Massnahmenvollzug",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Koch",
+          "full_name": "Sonja Koch",
+          "party": "SVP",
+          "role": "einzelrichter"
+        }
+      ]
+    },
     "7B_1069/2025": {
       "publication_date": "2026-03-12",
       "legal_area": "Strafrecht",
@@ -110642,6 +110773,23 @@
           "full_name": "Christian Kölz",
           "party": "Grüne",
           "role": "mitglied"
+        }
+      ]
+    },
+    "7B_856/2026": {
+      "publication_date": "2026-10-09",
+      "legal_area_code": "I172",
+      "legal_area": "Strafprozess",
+      "entscheid": "nicht eingetreten",
+      "beschwerdefuehrer": "privat",
+      "beschwerdegegner": "staat",
+      "judge_count": 1,
+      "judges": [
+        {
+          "name": "Koch",
+          "full_name": "Sonja Koch",
+          "party": "SVP",
+          "role": "einzelrichter"
         }
       ]
     },
