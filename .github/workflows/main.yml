@@ -4,11 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        description: 'Datum zum Nachholen (YYYYMMDD), leer = heute'
+        description: 'Datum zum Nachholen (YYYYMMDD), leer = letzte fünf Tage'
         required: false
         type: string
   schedule:
-    - cron: '30 17 * * *'
+    - cron: '10 18 * * *'
+      timezone: 'Europe/Zurich'
 
 permissions:
   contents: write
@@ -32,14 +33,17 @@ jobs:
           python-version: '3.13'
 
       - name: Python-Pakete installieren
-        run: pip install beautifulsoup4 lxml pandas openpyxl
+        run: pip install playwright beautifulsoup4 lxml pandas openpyxl
+
+      - name: Chromium installieren
+        run: python -m playwright install --with-deps chromium
 
       - name: Bundesgericht scrapen und analysieren
         run: |
           if [ -n "${{ inputs.date }}" ]; then
-            python bundesgericht_tagesurteile_rss.py --date "${{ inputs.date }}"
+            python bundesgericht_tagesurteile_new.py --date "${{ inputs.date }}"
           else
-            python bundesgericht_tagesurteile_rss.py
+            python bundesgericht_tagesurteile_new.py
           fi
 
       - name: JSON auf GitHub speichern
