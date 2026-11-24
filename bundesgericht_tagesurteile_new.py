@@ -23,7 +23,7 @@ import xml.etree.ElementTree as ET
 import unicodedata
 from datetime import datetime, timedelta
 from urllib.parse import urljoin, unquote
-from playwright.sync_api import sync_playwright, Error as PlaywrightError
+from playwright.sync_api import TimeoutError as PlaywrightTimeoutError, sync_playwright, Error as PlaywrightError
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -166,14 +166,20 @@ def rss_metadata():
     return result
 
 
+class AccessStopped(RuntimeError):
+    pass
+
+
 def goto_retry(page, url):
     for attempt in range(3):
-        response = page.goto(url, wait_until="networkidle", timeout=60_000)
+        response = page.goto(url, wait_until="domcontentloaded", timeout=60_000)
         if response is None:
             raise RuntimeError(f"Keine HTTP-Antwort: {url}")
         if response.status in (429, 503) and attempt < 2:
             time.sleep(60)
             continue
+        if response.status in (403, 429, 503):
+            raise AccessStopped(f"HTTP {response.status}: {url}")
         if response.status >= 400:
             raise RuntimeError(f"HTTP {response.status}: {url}")
         return
@@ -182,12 +188,18 @@ def goto_retry(page, url):
 def scrape_daily_decisions(day, output_dir, log_file, existing, metadata):
     output_dir.mkdir(parents=True, exist_ok=True)
     saved_files = []
+    stopped = False
+    errors = 0
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
         page = browser.new_page()
         try:
             goto_retry(page, f"{BASE_URL}?date={day}&lang=de&mode=news")
             locator = page.locator('a[href*="highlight_docid="]')
+            try:
+                locator.first.wait_for(state="attached", timeout=10_000)
+            except PlaywrightTimeoutError:
+                pass
             links = list(dict.fromkeys(urljoin(page.url, href) for href in
                 (locator.nth(i).get_attribute("href") for i in range(locator.count())) if href))
             log(f"{len(links)} Urteilslinks für {day}", log_file)
@@ -196,8 +208,9 @@ def scrape_daily_decisions(day, output_dir, log_file, existing, metadata):
                 if key and complete(existing.get(key, {})):
                     continue
                 try:
-                    time.sleep(2)
+                    time.sleep(15)
                     goto_retry(page, url)
+                    page.locator("#highlight_content").wait_for(state="attached", timeout=20_000)
                     html = page.content()
                     soup = BeautifulSoup(html, "lxml")
                     tag = soup.find("b")
@@ -212,11 +225,17 @@ def scrape_daily_decisions(day, output_dir, log_file, existing, metadata):
                     saved_files.append(target)
                     RSS_METADATA[target.name] = metadata.get(actual, {})
                     log(f"Gespeichert: {target.name}", log_file)
+                except AccessStopped as exc:
+                    log(f"Abruf eingestellt: {exc}", log_file)
+                    stopped = True
+                    errors += 1
+                    break
                 except Exception as exc:
+                    errors += 1
                     log(f"Fehler beim Urteil {url}: {exc}", log_file)
         finally:
             browser.close()
-    return saved_files
+    return saved_files, stopped, errors
 
 
 TEXT_CORRECTIONS = {
@@ -852,6 +871,7 @@ def main() -> int:
     log_file = args.output_dir / "scraping_log.txt"
     # Zuerst die Newsseiten verarbeiten, unabhängig von der RSS-Verfügbarkeit.
     failed = False
+    stopped = False
     for day in days:
         try:
             existing = existing_decisions(day, args.output_dir)
@@ -860,17 +880,24 @@ def main() -> int:
                 stamp = f"_{day[:4]}_{day[4:6]}_{day[6:]}__"
                 files = sorted(f for f in args.html_dir.glob("*.html") if stamp in f.name)
             else:
-                files = scrape_daily_decisions(day, args.html_dir, log_file, existing, {})
+                files, stopped, errors = scrape_daily_decisions(day, args.html_dir, log_file, existing, {})
+                failed = failed or bool(errors)
             if files:
                 raw, cleaned = analyse_files(files, args.judges_file)
                 save_outputs(cleaned, args.output_dir)
                 save_yearly_json(raw, cleaned, day, args.output_dir)
                 report_quality(raw, cleaned)
+        except AccessStopped as exc:
+            log(f"Abruf eingestellt am {day}: {exc}", log_file)
+            failed = True
+            stopped = True
         except Exception as exc:
             log(f"Fehler am {day}: {exc}", log_file)
             failed = True
+        if stopped:
+            break
     try:
-        metadata = rss_metadata()
+        metadata = {} if stopped else rss_metadata()
         for day in days:
             enrich_existing(day, args.output_dir, metadata)
     except Exception as exc:
@@ -878,6 +905,7 @@ def main() -> int:
     # Erfolgreiche Teilergebnisse sollen auch bei einzelnen Tagesfehlern gepusht werden.
     if failed:
         log("WARNUNG: Mindestens ein Tag konnte nicht vollständig verarbeitet werden.", log_file)
+        print("::warning::Urteilsabruf unvollständig; Teilergebnisse werden gespeichert.", flush=True)
     return 0
 
 
